@@ -1,4 +1,4 @@
-alert ("The game is being fixed, please visit later")
+alert ("the game is being fixed, visit later")
 
 // Display the message on the screen
 // Input: message: String
