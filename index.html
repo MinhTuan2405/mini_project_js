@@ -1,37 +1,75 @@
+<!-- define HTML file -->
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
+    
     <meta charset="UTF-8" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
     <!-- style -->
     <link rel="stylesheet" href="main.css" />
+
+    <!-- game title --> 
     <title>Guess My Number!</title>
+    
   </head>
+  
   <body>
+    
     <header>
+      
       <!-- game header -->
       <h1>Guess My Number!</h1>
-      <p class="between">(Between 1 and 20)</p>
+
+      <!-- game rule: the range of number that program can generate -->
+      <p class="numberRange">(Between 1 and 20)</p>
+
+      <!-- play again button -->
       <button class="btn again">Again!</button>
+      
+      <!-- secret number --> 
       <div class="number">?</div>
+      
     </header>
+    
     <main>
-      <!-- left panel: get the input -->
-      <section class="left">
+      
+      <!-- left panel: get, submit the input -->
+      <section class="leftPanel">
+
+        <!-- input cell --> 
         <input type="number" class="guess" />
+        
+        <!-- submit button --> 
         <button class="btn check">Check!</button>
+        
       </section>
+      
       <!-- right panel: display the score, high score -->
-      <section class="right">
+      <section class="rightPanel">
+
+        <!-- display message --> 
         <p class="message">Start guessing...</p>
+
+        <-- display current score --> 
         <p class="label-score">💯 Score: <span class="score">20</span></p>
+
+        <!-- highest score --> 
         <p class="label-highscore">
           🥇 Highscore: <span class="highscore">0</span>
         </p>
+        
       </section>
+      
     </main>
+    
     <!-- script, main logic of game -->
     <script src="main.js"></script>
+    
   </body>
+  
 </html>
