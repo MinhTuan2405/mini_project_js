@@ -33,14 +33,14 @@ main {
   justify-content: space-around;
 }
 
-.left {
+.leftPanel {
   width: 52rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.right {
+.rightPanel {
   width: 52rem;
   font-size: 2rem;
 }
@@ -69,7 +69,7 @@ h1 {
   transform: translate(-50%, 50%);
 }
 
-.between {
+.numberRange {
   font-size: 1.4rem;
   position: absolute;
   top: 2rem;
