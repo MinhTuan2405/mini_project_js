@@ -100,7 +100,6 @@ document.querySelector ('.check').addEventListener ('click', () => {
     }else {
         displayMessageAndBackgroud ('too low', 'blue')
         currentScore.innerHTML = score--
-        }
     }
                                                     
     // process if the player loses the game 
