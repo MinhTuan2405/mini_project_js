@@ -1,3 +1,5 @@
+alert ("The game is being fixed, please visit later")
+
 // Display the message on the screen
 // Input: message: String
 //        color: string, express the hexa code of color
