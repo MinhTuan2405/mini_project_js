@@ -9,7 +9,7 @@ const gameCofig = {
     upperBound: 20,                                     // upper bound number
     secretNumber: 0,                                    // secret number
     highScore: 0,                                       // high score
-    currentScore: 20,                             // current score
+    currentScore: 20,                                   // current score
     delayTime: 2500,                                    // delay time in game
 
     // notification
