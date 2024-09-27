@@ -4,7 +4,7 @@ const cameraConstraints  =  {
 }
 
 // set camera status
-localStorage.setItem ('camera status', 'off')
+localStorage.setItem ('camera status', 'on')
 
 
 // turn the camera on
