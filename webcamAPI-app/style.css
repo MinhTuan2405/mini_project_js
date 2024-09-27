@@ -8,6 +8,35 @@ body, html {
     background-color: #f0f0f0; 
 }
 
+/*confirm notification */
+.notification, .video {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+  
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-content {
+    justify-content: center;
+    align-content: center;
+    font-size: xx-large;
+}
+
+.btn {
+    position: relative;
+}
+
 /* video */
 .video {
     text-align: center;       
@@ -15,13 +44,14 @@ body, html {
 
 
 video {
+    margin-top: 100px;
     width: 400px;            
     height: 300px;            
     border: 2px solid #000;
     transform: scaleX(-1);
 }
   
-.video-switch-btn {
+.video-switch-btn, .btn, .exit {
     margin-top: 10px;
     padding: 10px 20px;
     background-color: #007bff;
@@ -34,4 +64,43 @@ video {
 .video-switch-btn:hover {
     background-color: #00b36e;
 }
+
+.confirm-action:hover {
+    background-color: #42da98;
+}
+
+.reject-action:hover {
+    background: rgb(207, 127, 127);
+}
+
+
+.exit:hover {
+    background: rgb(224, 118, 118);
+}
+.hidden {
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
   
+
+
+/* {
+    width: 400px;
+    height: 400px;
+    background: rgb(4, 172, 147);
+    border-radius: 20px;
+    border: 0.5pxsolid rgb(236, 36, 29);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+} */
