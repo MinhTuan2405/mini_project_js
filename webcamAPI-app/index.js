@@ -68,6 +68,9 @@ document.querySelector ('.confirm-action').addEventListener ('click', () => {
 document.querySelector ('.exit').addEventListener ('click', () => {
     // hidden the camera, return the confirm area
     document.querySelector ('.video').classList.add ('hidden')
+
+    // set the status of camera again
+    localStorage.setItem ('camera status', 'off')
 })
 
 
