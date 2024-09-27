@@ -16,8 +16,24 @@
   <title>Camera</title>
 </head>
 <body>
+  <!-- confirm notification bloakc-->
+   
+    <div class="notification">
+      <div>
+        <p class="notification-content">
+          are you want to continue
+        </p>  
+      </div>
+      
+        
+      <div>
+        <button class="confirm-action btn">Yes</button>
+      </div>
+    </div>
+   
+
   <!-- video pannel -->
-  <div class="video">
+  <div class="video hidden">
     <!-- display stream video-->
     <video class="videoStream" autoplay></video>
 
@@ -25,7 +41,14 @@
 
     <!-- video control button-->
     <button class="video-switch-btn">Turn on camera</button>
+    <button class="exit">Exit</button>
   </div>
+
+  <div class="overlay hidden"></div>
   <script src="index.js"></script>
 </body>
 </html>
+
+
+
+
