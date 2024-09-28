@@ -38,29 +38,28 @@ const turnOffCamera = () => {
 document.querySelector ('.confirm-action').addEventListener ('click', () => {
     // make the video handler appear
     document.querySelector ('.video').classList.remove ('hidden')
+})
 
-    // handle the video button on or off 
-    document.querySelector ('.video-switch-btn').addEventListener ('click', () => {
-        // get the status of camera
-        const cameraStatus = localStorage.getItem ('camera status')
 
-        // if camera is off now, enable it on
-        if (cameraStatus === 'off') {
-            document.querySelector ('.video-switch-btn').innerHTML = 'Turn off camera' // the the button notification
-            turnOnCamera () // turn camera on
-            localStorage.setItem ('camera status', 'on') // set the curren status of camera to on in local storage
-        }
+// handle the video button on or off 
+document.querySelector ('.video-switch-btn').addEventListener ('click', () => {
+    // get the status of camera
+    const cameraStatus = localStorage.getItem ('camera status')
 
-        // if camera is on now, turn it off
-        else if (cameraStatus === 'on') {
-            document.querySelector ('.video-switch-btn').innerHTML = 'Turn on camera' // the the button notification
-            turnOffCamera () // turn camera off
-            localStorage.setItem ('camera status', 'off') // set the curren status off camera to on in local storage
-        }
-        
-    })
+    // if camera is off now, enable it on
+    if (cameraStatus === 'off') {
+        document.querySelector ('.video-switch-btn').innerHTML = 'Turn off camera' // the the button notification
+        turnOnCamera () // turn camera on
+        localStorage.setItem ('camera status', 'on') // set the curren status of camera to on in local storage
+    }
 
-    turnOnCamera () // set the camera always on by default
+    // if camera is on now, turn it off
+    else if (cameraStatus === 'on') {
+        document.querySelector ('.video-switch-btn').innerHTML = 'Turn on camera' // the the button notification
+        turnOffCamera () // turn camera off
+        localStorage.setItem ('camera status', 'off') // set the curren status off camera to on in local storage
+    }
+    
 })
 
 
@@ -72,6 +71,9 @@ document.querySelector ('.exit').addEventListener ('click', () => {
     // set the status of camera again
     localStorage.setItem ('camera status', 'off')
 })
+
+
+turnOnCamera () // set the camera always on by default
 
 
 
